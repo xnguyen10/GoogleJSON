@@ -1,0 +1,19 @@
+﻿<Window x:Class="GoogleJSON.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GoogleJSON"
+        mc:Ignorable="d"
+        Title="Distance Location" Height="450" Width="655" Loaded="Window_Loaded" ResizeMode="NoResize">
+    <Grid>
+        <Button x:Name="btnShowData" IsDefault="True" Content="Show Data" HorizontalAlignment="Left" Margin="495,353,0,0" VerticalAlignment="Top" Width="116" Height="27" Click="btnShowData_Click"/>
+        <TextBox x:Name="txtResults" HorizontalAlignment="Left" Height="245" Margin="33,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="578" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"/>
+        <TextBox x:Name="txtDestination" Height="23" Margin="88,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="313" BorderThickness="1" Padding="0,1,0,0"/>
+        <Label Content="End:" HorizontalAlignment="Left" Margin="33,66,0,0" VerticalAlignment="Top" Width="50"/>
+        <TextBox x:Name="txtStart" HorizontalAlignment="Left" Height="23" Margin="88,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="313"/>
+        <Label Content="Start: " HorizontalAlignment="Left" Margin="33,35,0,0" VerticalAlignment="Top" Width="50"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="374,353,0,0" VerticalAlignment="Top" Width="116" Height="27" Click="btnClear"/>
+        <Button x:Name="btnStartLocation" Content="Get Current Location" HorizontalAlignment="Left" Margin="419,35,0,0" VerticalAlignment="Top" Width="134" Height="23" Click="btnStartLocation_Click"/>
+    </Grid>
+</Window>
